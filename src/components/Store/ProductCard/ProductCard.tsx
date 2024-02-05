@@ -7,7 +7,7 @@ export const ProductsCard= ({product}:{product:Product})=>
 {
     return (<>
 
-        <Link className={styles.card__link} href={`/articulo/${product?.handle}?id=${product?.id}`}>
+        <Link  className={styles.card__link} href={`/product/${product?.handle}?id=${product?.id}`}>
             <article className={styles.card}>
             
                 <Image
@@ -20,7 +20,7 @@ export const ProductsCard= ({product}:{product:Product})=>
                 <div className={styles.card__title}>
                     <p >{product?.title}</p>
                 </div>
-                <span className={styles.card__price}>precio USD</span>
+                {/* <span className={styles.card__price}>{} USD</span> */}
         
             </article>
 

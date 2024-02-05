@@ -4,7 +4,6 @@ import type { Metadata } from 'next'
 import { Header } from '../components/shared/Header'
 import { Footer } from '../components/shared/Footer'
 import styles from "./Global.module.sass"
-
 const inter = Inter({ subsets: ['latin'] })
 export const metadata:Metadata ={
   title:'Future World',
@@ -18,13 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body  suppressHydrationWarning={true} className={`${inter.className} ${styles.body}` }>
-          {/* <TanStackProvider> */}
-          <Header/>    
-          {children}
-          <Footer/>   
-          {/* </TanStackProvider> */}
-      </body>
+      
+        <body  suppressHydrationWarning={true} className={`${inter.className} ${styles.body}` }>
+            <Header/>    
+              
+            {children}
+                
+            <Footer/>   
+        </body>
+  
     </html>
   )
 }

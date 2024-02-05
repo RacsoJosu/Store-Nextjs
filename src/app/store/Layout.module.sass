@@ -1,4 +1,10 @@
 .Navbar
+    display: flex
+    flex-wrap: wrap
+    align-content: flex-start
+    align-items: flex-start
+    
+.NavbarLink
     text-decoration: none
     color: $color-secondary
     padding: 1rem
@@ -10,7 +16,10 @@
     &:hover
         color: #fff
         background: $color-secondary
-    &:active
+    &--activeLink
         color: #fff
-        background: $color-secondary
+        background: $color-secondary        
+
+        
+
             

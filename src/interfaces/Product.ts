@@ -1,3 +1,5 @@
+import { Variant } from "./Variants";
+
 export interface Product {
   id: number;
   title: string;
@@ -13,7 +15,7 @@ export interface Product {
   status: string;
   tags: string;
   admin_graphql_api_id: string;
-  variants: Array<any>;
+  variants: Array<Variant>;
   options: Array<any>;
   images: Array<any>;
   image: {

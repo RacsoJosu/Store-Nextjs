@@ -28,6 +28,7 @@ export const getCollections = async ()=>{
         
     } catch (error) {
         console.log({error})
+        return error
         
     }
 
@@ -50,6 +51,7 @@ export const getCollectionProducts = async (id:string)=>{
         
     } catch (error) {
         console.log({error})
+        
         
     }
 
